@@ -1,0 +1,392 @@
+/*************************************************
+**************************************************
+PAGE ONE STYLES (INTRO PAGE w/ NAME AND RESUME
+
+
+**************************************************
+***************************************************/
+
+.wrapper, html, body, .viewport {
+  height: 100%;
+  margin: 0;
+}
+
+
+.firstPage{
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+
+.banner { /*THIS IS THE DARK BROWN CANVAS ON THE BACK */
+  /*background-color: #2a2a2a; */
+  display: flex;
+  flex:auto;
+  width: 80%;
+}
+
+.shell{
+  display: flex;
+  margin:auto;
+  flex-direction: column;
+}
+
+.name {      /* CONTAINS THE ACTUAL NAME TEXT */
+  color: #000;
+  display: flex;
+  font-size: 10vw;
+  justify-content: center;
+  flex: auto;
+  letter-spacing: 0.5vw;
+  font-weight: 800;
+}
+
+.resume-contact {
+  display:flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  /*font-size: 30px;*/
+  font-size:2vw;
+  color: #000;
+  letter-spacing: 0.2vw;
+  margin: auto;
+}
+
+
+.nav-bar{
+  /* background-color: #f38f01; */
+  background-color: #FF0;
+  display:flex;
+  flex-direction: column-reverse;
+  width:10%;
+  position:relative;
+}
+
+.arrow0{
+  position:absolute;
+  top:79%;
+  bottom:50%;
+  transform:translate(-50%, -50%);
+
+}
+
+
+.arrow1{
+  position:absolute;
+  top:81%;
+  bottom:60%;
+  transform:translate(-50%, -50%);
+
+}
+
+.arrow2{
+  position:absolute;
+  top:83%;
+  bottom:50%;
+  transform:translate(-50%, -50%);
+}
+
+.arrow3{
+  position:absolute;
+  top:85%;
+  bottom:50%;
+  transform:translate(-50%, -50%);
+
+}
+
+
+
+
+@media screen and (max-width:350px) {
+  .name{
+    color: #000;
+    display: flex;
+    font-size: 10vw;
+    justify-content: center;
+    letter-spacing: 1.5vw;
+    flex: auto;
+  }
+}
+
+
+/*
+
+@media screen and (orientation: portrait) {
+  .name{
+    color: #d2b48c;
+    display: flex;
+    font-size: 15vw;
+    justify-content: center;
+    letter-spacing: 1.5vw;
+    flex: auto;
+  }
+  .resume-contact{
+    font-size: 3vw;
+  }
+
+  .arrow0{
+    transform:translate(-1.6vw, -50%);
+  }
+  .arrow1{
+    transform:translate(-3.1vw, -50%);
+  }
+  .arrow2{
+    transform:translate(-5.5vw, -40%);
+  }
+  .arrow3{
+    transform:translate(-8vw, -50%);
+  }
+}*/
+
+
+/*************************************************
+**************************************************
+PAGE TWO STYLES (MISSION STATEMENT AND ABOUT ME
+**************************************************
+***************************************************/
+
+
+.info-page {
+  margin: auto;
+  display: flex;
+  height: 100%;
+}
+
+.profile-column {
+  background-color: #d2b48c;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;        /* for single line flex container */
+  align-content: center;      /* for multi-line flex container */
+
+}
+
+.profile-picture{
+  display:flex;
+  max-height: 40%;
+  max-width: 40%;
+
+}
+
+.about-me {
+  flex: 1;
+  display: flex;
+  flex-direction: column;   /* Default direction is row, will divide up space on the x-axis */
+}
+
+.general-info {
+  background-color: #c0dbe2;
+  flex: 1;
+}
+
+.mission-statement {
+  background-color: #cdf1c3;
+  flex: 1;
+}
+
+
+
+
+/*************************************************
+**************************************************
+PAGE THREE STYLES (PROJECT SHOWCASE)
+
+Netflix spaces content by
+**************************************************
+***************************************************/
+.row_shell{
+  display: flex;
+  height: 100%;
+  background-color: #F00;
+  margin:auto;
+
+}
+.project-showcase {
+  display: flex;
+  height: 100%;
+  width:90%;
+  background-color: #aec6cf;
+  flex-direction: column;
+  margin:auto;
+}
+
+
+.title{
+  margin-bottom:auto;
+  font-size:2vw;
+  color: #000;
+  font-weight: 700;
+}
+
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  transition: color 150ms;
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.contain {
+  width: 100%;
+}
+.code{
+  overflow: scroll;
+  flex:auto;
+  width: 100%;
+}
+.row__inner {
+  transition: 450ms transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 10 0;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+}
+.tile__img {
+  width: 250px;
+  height: 140.625px;
+  object-fit: cover;
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  transition: 450ms opacity;
+}
+.tile__details:after,
+.tile__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile__details:after {
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ecf0f1;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.tile__details:before {
+  content: '▶';
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 7px;
+  margin-top: -18px;
+  text-align: center;
+  z-index: 2;
+}
+.tile:hover .tile__details {
+  opacity: 1;
+}
+.tile__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.row__inner:hover {
+  transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  transform: translate3d(125px, 0, 0);
+}
+
+
+
+/*************************************************
+**************************************************
+PAGE FOUR STYLES (SOCIAL MEDIA AND SIGNATURE)
+**************************************************
+***************************************************/
+
+.social-media {
+  display: flex;
+  height: 100%;
+  background-color:#ff0000;
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  flex:auto;
+}
+
+.web-content{
+  background-color: #FFF;
+  height:70%;
+}
+
+.personal-content{
+  background-color:  #2a2a2a;
+  height:30%;
+  color: #FFF;
+}
+
+
+
+
+/*************************************************
+**************************************************
+MISCELLANEOUS STYLES
+**************************************************
+***************************************************/
+
+a{
+color: inherit;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+body{
+  font-family: Balto;
+}
+
+
+@font-face {
+  font-family:"Balto";
+  src:url(https://cdn0.vox-cdn.com/fonts/vox/baltoweb-book.v81c1cef.eot);
+  src:url(https://cdn0.vox-cdn.com/fonts/vox/baltoweb-book.ved29186.woff)  format("woff");
+  font-weight:400;
+  font-style:normal
+}
