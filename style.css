@@ -8,7 +8,8 @@ PAGE ONE STYLES (INTRO PAGE w/ NAME AND RESUME
 
 .wrapper, html, body, .viewport {
   height: 100%;
-  margin: 0;
+  margin: auto;;
+
 }
 
 
@@ -23,7 +24,8 @@ PAGE ONE STYLES (INTRO PAGE w/ NAME AND RESUME
   /*background-color: #2a2a2a; */
   display: flex;
   flex:auto;
-  width: 80%;
+  width: 100%;
+  background-color: #FFF;
 }
 
 .shell{
@@ -57,10 +59,10 @@ PAGE ONE STYLES (INTRO PAGE w/ NAME AND RESUME
 
 .nav-bar{
   /* background-color: #f38f01; */
-  background-color: #FF0;
+  background-color: #FFF;
   display:flex;
   flex-direction: column-reverse;
-  width:10%;
+  width:60px;
   position:relative;
 }
 
@@ -101,12 +103,7 @@ PAGE ONE STYLES (INTRO PAGE w/ NAME AND RESUME
 
 @media screen and (max-width:350px) {
   .name{
-    color: #000;
-    display: flex;
-    font-size: 10vw;
-    justify-content: center;
     letter-spacing: 1.5vw;
-    flex: auto;
   }
 }
 
@@ -151,7 +148,7 @@ PAGE TWO STYLES (MISSION STATEMENT AND ABOUT ME
 .info-page {
   margin: auto;
   display: flex;
-  height: 100%;
+  height: 100vh;
 }
 
 .profile-column {
@@ -199,27 +196,33 @@ Netflix spaces content by
 ***************************************************/
 .row_shell{
   display: flex;
-  height: 100%;
-  background-color: #F00;
+  min-height: 100vh;
+
+  background-color: #FFF;
   margin:auto;
+
 
 }
 .project-showcase {
   display: flex;
-  height: 100%;
-  width:90%;
-  background-color: #aec6cf;
+  flex-grow:1;
+  background-color: #000;
   flex-direction: column;
   margin:auto;
+
+  max-width:calc(100vw - 60px);
+  /* Hacky way and non-reusable way to get dimensions for nav-bar to fit */
 }
 
+/*
+.nav-bar{
+  background-color: #FF0;
+  display:flex;
+  flex-direction: column-reverse;
+  width:60px;
+  position:relative;
+} */
 
-.title{
-  margin-bottom:auto;
-  font-size:2vw;
-  color: #000;
-  font-weight: 700;
-}
 
 
 a:link,
@@ -239,32 +242,46 @@ a:hover {
 }
 .code{
   overflow: scroll;
-  flex:auto;
   width: 100%;
+  font-size:20px;
+  color: #FFF;
+  font-weight: 700;
+
+
 }
 .row__inner {
   transition: 450ms transform;
   font-size: 0;
   white-space: nowrap;
   margin: 10 0;
-  padding-bottom: 10px;
-  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-top: 17px;      /* Decrease this to move the title text down */
+
 }
 .tile {
   position: relative;
   display: inline-block;
-  width: 250px;
-  height: 140.625px;
+  width: 230px;
+  height: 184.625px;
   margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 10px;    /*Increase this to separate images from title text */
   font-size: 20px;
   cursor: pointer;
   transition: 450ms all;
   transform-origin: center left;
 }
 .tile__img {
-  width: 250px;
-  height: 140.625px;
+  width: 230px;
+  height: 184.625px;
   object-fit: cover;
+}
+
+.tile__img1{
+  width: 250px;
+  height: 200.625px;
+  object-fit: scale-down;
 }
 .tile__details {
   position: absolute;
@@ -316,7 +333,7 @@ a:hover {
   padding: 10px;
 }
 .row__inner:hover {
-  transform: translate3d(-62.5px, 0, 0);
+  transform: translate3d(-10.5px, 0, 0);
 }
 .row__inner:hover .tile {
   opacity: 0.3;
@@ -328,7 +345,6 @@ a:hover {
 .tile:hover ~ .tile {
   transform: translate3d(125px, 0, 0);
 }
-
 
 
 /*************************************************
