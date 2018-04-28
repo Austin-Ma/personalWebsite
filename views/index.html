@@ -16,10 +16,9 @@
 	  </script>
     <script>
       $(document).ready(function(){
-        $(".nav-bar-img").stick_in_parent();
+        $(".nav_menu").stick_in_parent();
       });
     </script>
-
 
   </head>
 
@@ -35,9 +34,10 @@
       </div>
     </div>
   </div>
+</div>
 
 
-  <div class="nav-bar">
+
 
       <div class="arrow0">
         <a href="#info-page">
@@ -47,8 +47,23 @@
         </a>
       </div>
 
+      <div class="arrow0_mobile">
+        <a href="#info-page2">
+        <svg onclick="goToInfo()" fill="#E4E4E1" height="8vh" viewBox= "0 0 24 24" width = "8vw" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z">< /path>
+        </svg>
+        </a>
+      </div>
+
       <div class="arrow1">
         <a href="#info-page">
+        <svg onclick="goToInfo()" fill="#9bc5c3" height="9vh" viewBox= "0 0 24 24" width = "9vw" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z">< /path>
+        </svg>
+      </div>
+
+      <div class="arrow1_mobile">
+        <a href="#info-page2">
         <svg onclick="goToInfo()" fill="#9bc5c3" height="9vh" viewBox= "0 0 24 24" width = "9vw" xmlns="http://www.w3.org/2000/svg">
         <path d="M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z">< /path>
         </svg>
@@ -63,6 +78,14 @@
           </a>
         </div>
 
+        <div class="arrow2_mobile">
+          <a href="#info-page2">
+          <svg onclick="goToInfo()" fill="#616161" height="11vh" viewBox= "0 0 24 24" width = "11vw" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z">< /path>
+          </svg>
+          </a>
+        </div>
+
         <div class="arrow3">
           <a href="#info-page">
           <svg onclick="goToInfo()" fill="#000" height="12vh" viewBox= "0 0 24 24" width = "12vw" xmlns="http://www.w3.org/2000/svg">
@@ -70,252 +93,485 @@
           </svg>
         </a>
         </div>
-    </div>
-</div>
+
+        <div class="arrow3_mobile">
+          <a href="#info-page2">
+          <svg onclick="goToInfo()" fill="#000" height="12vh" viewBox= "0 0 24 24" width = "12vw" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.41,7.84L12,12.42l4.59,-4.58L18,9.25l-6,6 -6,-6z">< /path>
+          </svg>
+        </a>
+        </div>
 
 
-<div class="temp_cointainer">
-  <div class="info-page" id="info-page">
 
-    <div class="profile-column">
-      <img class="profile-picture" src="https://pbs.twimg.com/profile_images/661223657528651776/94PccMFW_400x400.jpg">
-    </div>
 
-    <div class="about-me">
 
-          <div class="general-info">
-            <img class="icon_img4" src="../public/images/location.png" alt=""/>
-            Los Angeles, California
-            <br><br>
-            <img class="icon_img4" src="../public/images/education.png" alt=""/>
-            University of California, Los Angeles
-            <br><br>
-            <img class="icon_img4" src="../public/images/reading.png" alt=""/>
-            The Lean Startup - Eric Ries
-            <br><br>
-            <img class="icon_img4" src="../public/images/spotify.png" alt=""/>
+<div class="two-four-container">
+
+
+  <div class=content_container>
+        <div class="temp_cointainer">
+          <div class="info-page" id="info-page">
+
+              <div class="profile-column">
+                <img class="profile-picture" src="https://pbs.twimg.com/profile_images/661223657528651776/94PccMFW_400x400.jpg">
+              </div>
+
+              <div class="about-me">
+
+                    <div class="general-info">
+                      <img class="icon_img4" src="../public/images/location.png" alt=""/>
+                      Los Angeles, California
+                      <br><br>
+                      <img class="icon_img4" src="../public/images/education.png" alt=""/>
+                      University of California, Los Angeles
+                      <br><br>
+                      <img class="icon_img4" src="../public/images/reading.png" alt=""/>
+                      The Lean Startup - Eric Ries
+                      <br><br>
+                      <img class="icon_img4" src="../public/images/spotify.png" alt=""/>
+                    </div>
+
+
+                    <div class="mission-statement"> Hey there, nice to meet you! I'm <i><b class="normal-text">Austin</b></i>. I'm currently a student at <i><b class="normal-text"> UCLA </b></i> studying <i><b class="normal-text">Linguistics and Computer Science</b></i>.
+                      <br> <br><br><br>
+                       Currently, I'm primarily interested in full-stack web development, while also exploring data visualizations and design.
+                      <br> <br><br><br>
+                       When I'm not at school, I enjoy hiking, golfing, and reading up on finance and startup entrepreneurship.
+                       <br> <br><br><br>
+                       <b><i>Check out some of the projects I've worked on!</b></i>
+                    </div>
+              </div>
+            </div>
           </div>
-      <div class="mission-statement"> Hey there, nice to meet you! I'm <i><b class="normal-text">Austin</b></i>. I'm currently a student at <i><b class="normal-text"> UCLA </b></i> studying <i><b class="normal-text">Linguistics and Computer Science</b></i>. <br> <br>
-         Currently, I'm primarily interested in full-stack web development, while also exploring data visualizations and design. <br> <br> When I'm not at school,
-         I enjoy hiking, golfing, and reading up on finance and startup entrepreneurship. <br> <br> <b><i>Check out some of the projects I've worked on!</b></i>
-      </div>
-    </div>
+
+      <div class="project-showcase">
+        <div class="code">
+        &nbsp;&nbsp;   <b class="my-title"> Code </b>
+          <div class="row__inner">
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="../public/images/thousandWords_2.gif" alt=""  />
+              </div>
+              <div class="tile__details">
+                <p class="tech-description" align="right"><b>Languages Used:</b></p>
+                <p class="languages" align="right">JavaScript &nbsp;</p>
+                <a href="https://github.com/johnwu93/thousand-words" target="_blank">
+                <img class="icon_img" src="../public/images/github4.png" alt="" align="right"/>
+                </a>
+              <div class="tile__title">
+                  <h1 class="project-name">Thousand Words </h1>
+                  <p class="project-description">
+                    Share where you've been in the past with a <br>
+                    visualization of your Instagram geo-location data.<br>
+                    Built using Firebase, React, and Meteor JS.  </p>
+              </div>
+            </div>
+          </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="../public/images/bruinWalk.gif" alt=""  />
+              </div>
+              <div class="tile__details">
+                <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
+                <p class="languages" align="right" style="vertical-align: top;">Python &nbsp;</p>
+                <a href="http://www.bruinwalk.com/" target="_blank">
+                <img class="icon_img3" src="../public/images/internet.svg" alt="" align="right"/>
+                </a>
+
+              <div class="tile__title">
+                  <h1 class="project-name"> BruinWalk </h1>
+                  <p class="project-description">
+                    Find grade distributions and reviews for classes<br>
+                    you plan on taking at UCLA. Find reviews for <br>
+                    apartments you plan on renting nearby.<br>
+                    Built using Django.
+                </div>
+              </div>
+            </div>
 
 
-  </div>
-   <div class="nav-bar">
-   <img class="nav-bar-img" src="../public/images/tempNavBar.png" alt=""/>
- </div>
-</div>
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="../public/images/synaesthetic.gif" alt="" />
+              </div>
+              <div class="tile__details">
+                <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
+                <p class="languages" align="right" style="vertical-align: top;">JavaScript &nbsp;</p>
+
+                <a href="https://github.com/ninaling/synaesthetic" target="_blank">
+                <img class="icon_img" src="../public/images/github4.png" alt="" align="right"/>
+                </a>
+
+                <a href="http://synaesthetic.io/" target="_blank">
+                <img class="icon_img2" src="../public/images/internet.svg" alt="" align="right"/>
+                </a>
+                <div class="tile__title">
+                  <h1 class="project-name"> Synaesthetic.io </h1>
+                  <p class="project-description"> Visualize songs from YouTube using JavaScript  &nbsp;<br>
+                    graphics. Build Using Node JS, Express, p5JS, <br>
+                    and three.js </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="../public/images/acumind.png" alt=""  />
+              </div>
+              <div class="tile__details">
+                <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
+                <p class="languages" align="right" style="vertical-align: top;">JavaScript &nbsp;</p>
+                <a href="https://github.com/Austin-Ma/Acumind" target="_blank">
+                <img class="icon_img" src="../public/images/github4.png" alt="" align="right"/>
+                </a>
+                <div class="tile__title">
+                  <h1 class="project-name"> Acumind </h1>
+                  <p class="project-description"> Feeling stressed? Get a quick check-in by looking <br>
+                    at your tweets using a Twitter sentiment analyzer. <br>
+                    Built using Node JS, Express, Flask, and Firebase.
+                  </p>
+                </div>
+              </div>
+            </div>
 
 
 
 
-<div class="row_shell">
-<div class="project-showcase">
-
-
-  <div class="code">
-  &nbsp;&nbsp;   <b class="my-title"> Code </b>
-    <div class="row__inner">
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="../public/images/thousandWords_2.gif" alt=""  />
-        </div>
-        <div class="tile__details">
-          <p class="tech-description" align="right"><b>Languages Used:</b></p>
-          <p class="languages" align="right">JavaScript &nbsp;</p>
-          <a href="https://github.com/johnwu93/thousand-words" target="_blank">
-          <img class="icon_img" src="../public/images/github4.png" alt="" align="right"/>
-          </a>
-        <div class="tile__title">
-            <h1 class="project-name">Thousand Words </h1>
-            <p class="project-description">
-              Share where you've been in the past with a <br>
-              visualization of your Instagram geo-location data.<br>
-              Built using Firebase, React, and Meteor JS.  </p>
-        </div>
-      </div>
-    </div>
-
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="../public/images/bruinWalk.gif" alt=""  />
-        </div>
-        <div class="tile__details">
-          <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
-          <p class="languages" align="right" style="vertical-align: top;">Python &nbsp;</p>
-          <a href="http://www.bruinwalk.com/" target="_blank">
-          <img class="icon_img3" src="../public/images/internet.svg" alt="" align="right"/>
-          </a>
-
-        <div class="tile__title">
-            <h1 class="project-name"> BruinWalk </h1>
-            <p class="project-description">
-              Find grade distributions and reviews for classes<br>
-              you plan on taking at UCLA. Find reviews for <br>
-              apartments you plan on renting nearby.<br>
-              Built using Django.
           </div>
         </div>
-      </div>
 
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="../public/images/synaesthetic.gif" alt="" />
+        <div class="code">
+              &nbsp;&nbsp; <b class="my-title">Data Visualization</b>
+            <div class="row__inner">
+
+
+              <div class="tile">
+                <div class="tile__media">
+                  <img class="tile__img" src="../public/images/voices.gif" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <p class="tech-description" align="right" style="vertical-align: top;"><b>Technology Used:</b></p>
+                  <p class="languages" align="right" style="vertical-align: top;"> Illustrator &nbsp; <br> R &nbsp;&nbsp;&nbsp;</p>
+                  <a href="https://voices.aaja.org/index/2017/7/25/south-philly-vietnamese" target="_blank">
+                  <img class="icon_img3" src="../public/images/internet.svg" alt="" align="right"/>
+                  </a>
+                  <div class="tile__title">
+                    <h1 class="project-name">AAJA: The Immigrant and <br>the Stranger</h1>
+                    <p class="project-description"> Visualizing Asian-American demographic trends<br>
+                      in Philadelphia with census data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
         </div>
-        <div class="tile__details">
-          <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
-          <p class="languages" align="right" style="vertical-align: top;">JavaScript &nbsp;</p>
-
-          <a href="https://github.com/ninaling/synaesthetic" target="_blank">
-          <img class="icon_img" src="../public/images/github4.png" alt="" align="right"/>
-          </a>
-
-          <a href="http://synaesthetic.io/" target="_blank">
-          <img class="icon_img2" src="../public/images/internet.svg" alt="" align="right"/>
-          </a>
-          <div class="tile__title">
-            <h1 class="project-name"> Synaesthetic.io </h1>
-            <p class="project-description"> Visualize songs from YouTube using JavaScript  &nbsp;<br>
-              graphics. Build Using Node JS, Express, p5JS, <br>
-              and three.js </p>
-          </div>
-        </div>
-      </div>
 
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="../public/images/acumind.png" alt=""  />
-        </div>
-        <div class="tile__details">
-          <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
-          <p class="languages" align="right" style="vertical-align: top;">JavaScript &nbsp;</p>
-          <a href="https://github.com/Austin-Ma/Acumind" target="_blank">
-          <img class="icon_img" src="../public/images/github4.png" alt="" align="right"/>
-          </a>
-          <div class="tile__title">
-            <h1 class="project-name"> Acumind </h1>
-            <p class="project-description"> Feeling stressed? Get a quick check-in by looking <br>
-              at your tweets using a Twitter sentiment analyzer. <br>
-              Built using Node JS, Express, Flask, and Firebase.
-            </p>
-          </div>
-        </div>
-      </div>
+        <div class="code">
+              &nbsp;&nbsp; <b class="my-title"> Other Projects </b>
+            <div class="row__inner">
 
 
+              <div class="tile">
+                <div class="tile__media">
+                  <img class="tile__img" src="../public/images/statyours.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <p class="tech-description" align="right" style="vertical-align: top;"><b>Technology Used:</b></p>
+                  <p class="languages" align="right" style="vertical-align: top;"> Audacity &nbsp; <br> Python&nbsp;&nbsp;&nbsp;</p>
+                  <a href="https://dailybruin.com/2016/12/01/statistically-yours-cold-emailing-in-a-quest-for-internships/" target="_blank">
+                  <img class="icon_img3" src="../public/images/internet.svg" alt="" align="right"/>
+                  </a>
+                <div class="tile__title">
+                    <h1 class="project-name">Statistically Yours</h1>
+                    <p class="project-description">Podcast demystifying trending topics relevant to <br>
+                      the UCLA student body using statistics and <br>
+                      infographics.</p>
+                </div>
+                </div>
+              </div>
 
 
-    </div>
-  </div>
-
-
-  <div class="code">
-        &nbsp;&nbsp; <b class="my-title">Data Visualization</b>
-      <div class="row__inner">
-
-
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="../public/images/voices.gif" alt=""  />
-          </div>
-          <div class="tile__details">
-            <p class="tech-description" align="right" style="vertical-align: top;"><b>Technology Used:</b></p>
-            <p class="languages" align="right" style="vertical-align: top;"> Illustrator &nbsp; <br> R &nbsp;&nbsp;&nbsp;</p>
-            <a href="https://voices.aaja.org/index/2017/7/25/south-philly-vietnamese" target="_blank">
-            <img class="icon_img3" src="../public/images/internet.svg" alt="" align="right"/>
-            </a>
-            <div class="tile__title">
-              <h1 class="project-name">AAJA: The Immigrant and <br>the Stranger</h1>
-              <p class="project-description"> Visualizing Asian-American demographic trends<br>
-                in Philadelphia with census data.
-              </p>
             </div>
           </div>
         </div>
 
 
-      </div>
+
+
+
+
+  <div class="social-media">
+      <div class="web-content">
+            <h1 class="my-text">
+              Let's Connect!
+            </h1>
+            <div class="icon-list">
+                  <div class="another-container">
+                      <a id= "linkedinicon" href="https://www.linkedin.com/in/austin-ma/" target="_blank">
+                      <img class="social-media-icon" id="linkedinicon" src="../public/images/linkedin.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="another-container">
+                      <a id="githubicon" href="https://github.com/Austin-Ma" target="_blank">
+                      <img class="social-media-icon" id="githubicon"  src="../public/images/github.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="another-container">
+                      <a id="mediumicon" href="https://medium.com/@_AustinMa" target="_blank">
+                      <img class="social-media-icon" id="mediumicon" src="../public/images/medium.png" alt=""/>
+                      </a>
+                  </div>
+                  <div class="another-container">
+                      <a id="twittericon" href="https://twitter.com/_AustinMa" target="_blank">
+                      <img class="social-media-icon" id="twittericon" src="../public/images/twitter.png" alt=""/>
+                      </a>
+                  </div>
+            </div>
+            <div class="personal-content"> "It's easier to invent the future than predict it." </div>
+       </div>
   </div>
+</div>
 
 
-  <div class="code">
-        &nbsp;&nbsp; <b class="my-title"> Other Projects </b>
-      <div class="row__inner">
+<div class=content_container2>
+  <div class=temp_container2>
+        <div class=info-page2 id="info-page2">
+              <div class="profile-column2">
+                <img class="profile-picture2" src="https://pbs.twimg.com/profile_images/661223657528651776/94PccMFW_400x400.jpg">
+              </div>
+              <div class="about-me2">
+
+                    <div class="general-info2">
+                      <img class="icon_img42" src="../public/images/location.png" alt=""/>
+                      Los Angeles, California
+                      <br><br>
+                      <img class="icon_img42" src="../public/images/education.png" alt=""/>
+                      University of California, Los Angeles
+                      <br><br>
+                      <img class="icon_img42" src="../public/images/reading.png" alt=""/>
+                      The Lean Startup - Eric Ries
+                      <br><br>
+                      <img class="icon_img42" src="../public/images/spotify.png" alt=""/>
+                    </div>
 
 
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="../public/images/statyours.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <p class="tech-description" align="right" style="vertical-align: top;"><b>Technology Used:</b></p>
-            <p class="languages" align="right" style="vertical-align: top;"> Audacity &nbsp; <br> Python&nbsp;&nbsp;&nbsp;</p>
-            <a href="https://dailybruin.com/2016/12/01/statistically-yours-cold-emailing-in-a-quest-for-internships/" target="_blank">
-            <img class="icon_img3" src="../public/images/internet.svg" alt="" align="right"/>
-            </a>
-          <div class="tile__title">
-              <h1 class="project-name">Statistically Yours</h1>
-              <p class="project-description">Podcast demystifying trending topics relevant to <br>
-                the UCLA student body using statistics and <br>
-                infographics.</p>
-          </div>
-          </div>
+                    <div class="mission-statement2"> Hey there, nice to meet you! I'm <i><b class="normal-text2">Austin</b></i>. I'm currently a student at <i><b class="normal-text2"> UCLA </b></i> studying <i><b class="normal-text2">Linguistics and Computer Science</b></i>.
+                      <br> <br><br><br>
+                       Currently, I'm primarily interested in full-stack web development, while also exploring data visualizations and design.
+                      <br> <br><br><br>
+                       When I'm not at school, I enjoy hiking, golfing, and reading up on finance and startup entrepreneurship.
+                       <br> <br><br><br>
+                       <b><i>Check out some of the projects I've worked on!</b></i>
+                    </div>
+              </div>
         </div>
 
 
-      </div>
+
+        <div class="project-showcase2">
+                <div class="code2">
+                &nbsp;&nbsp;   <b class="my-title2"> Code </b>
+                  <div class="row__inner2">
+                      <div class="tile2">
+                        <div class="tile__media">
+                          <img class="tile__img2" src="../public/images/thousandWords_2.gif" alt=""  />
+                        </div>
+                        <div class="tile__details2">
+                          <p class="tech-description" align="right"><b>Languages Used:</b></p>
+                          <p class="languages" align="right">JavaScript &nbsp;</p>
+                          <a href="https://github.com/johnwu93/thousand-words" target="_blank">
+                          <img class="icon_imgmobile" src="../public/images/github4.png" alt="" align="right"/>
+                          </a>
+                        <div class="tile__title2">
+                            <h1 class="project-name2">Thousand Words </h1>
+                            <p class="project-description">
+                              Share where you've been in the past with a <br>
+                              visualization of your Instagram geo-location data.<br>
+                              Built using Firebase, React, and Meteor JS.  </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="tile2">
+                      <div class="tile__media">
+                        <img class="tile__img2" src="../public/images/bruinWalk.gif" alt=""  />
+                      </div>
+                      <div class="tile__details2">
+                        <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
+                        <p class="languages" align="right" style="vertical-align: top;">Python &nbsp;</p>
+                        <a href="http://www.bruinwalk.com/" target="_blank">
+                        <img class="icon_img3mobile" src="../public/images/internet.svg" alt="" align="right"/>
+                        </a>
+                      <div class="tile__title">
+                          <h1 class="project-name2"> BruinWalk </h1>
+                          <p class="project-description">
+                            Find grade distributions and reviews for classes<br>
+                            you plan on taking at UCLA. Find reviews for <br>
+                            apartments you plan on renting nearby.<br>
+                            Built using Django.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tile2">
+                      <div class="tile__media">
+                        <img class="tile__img2" src="../public/images/synaesthetic.gif" alt="" />
+                      </div>
+                      <div class="tile__details2">
+                        <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
+                        <p class="languages" align="right" style="vertical-align: top;">JavaScript &nbsp;</p>
+
+                        <a href="https://github.com/ninaling/synaesthetic" target="_blank">
+                        <img class="icon_imgmobile" src="../public/images/github4.png" alt="" align="right"/>
+                        </a>
+
+                        <a href="http://synaesthetic.io/" target="_blank">
+                        <img class="icon_img2mobile" src="../public/images/internet.svg" alt="" align="right"/>
+                        </a>
+                        <div class="tile__title2">
+                          <h1 class="project-name2"> Synaesthetic.io </h1>
+                          <p class="project-description"> Visualize songs from YouTube using JavaScript  &nbsp;<br>
+                            graphics. Build Using Node JS, Express, p5JS, <br>
+                            and three.js </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tile2">
+                      <div class="tile__media">
+                        <img class="tile__img2" src="../public/images/acumind.png" alt=""  />
+                      </div>
+                      <div class="tile__details2">
+                        <p class="tech-description" align="right" style="vertical-align: top;"><b>Languages Used:</b></p>
+                        <p class="languages" align="right" style="vertical-align: top;">JavaScript &nbsp;</p>
+                        <a href="https://github.com/Austin-Ma/Acumind" target="_blank">
+                        <img class="icon_imgmobile" src="../public/images/github4.png" alt="" align="right"/>
+                        </a>
+                        <div class="tile__title2">
+                          <h1 class="project-name2"> Acumind </h1>
+                          <p class="project-description"> Feeling stressed? Get a quick check-in by looking <br>
+                            at your tweets using a Twitter sentiment analyzer. <br>
+                            Built using Node JS, Express, Flask, and Firebase.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code2">
+                      &nbsp;&nbsp; <b class="my-title2">Data Visualization</b>
+                    <div class="row__inner2">
+
+                      <div class="tile2">
+                        <div class="tile__media">
+                          <img class="tile__img2" src="../public/images/voices.gif" alt=""  />
+                        </div>
+                        <div class="tile__details2">
+                          <p class="tech-description" align="right" style="vertical-align: top;"><b>Technology Used:</b></p>
+                          <p class="languages" align="right" style="vertical-align: top;"> Illustrator &nbsp; <br> R &nbsp;&nbsp;&nbsp;</p>
+                          <a href="https://voices.aaja.org/index/2017/7/25/south-philly-vietnamese" target="_blank">
+                          <img class="icon_img3mobile" src="../public/images/internet.svg" alt="" align="right"/>
+                          </a>
+                          <div class="tile__title2">
+                            <p class="project-name2">AAJA: The Immigrant and the Stranger</p>
+                            <p class="project-description"> Visualizing Asian-American demographic trends<br>
+                              in Philadelphia with census data.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="code2">
+                      &nbsp;&nbsp; <b class="my-title2"> Other Projects </b>
+                    <div class="row__inner2">
+
+                      <div class="tile2">
+                        <div class="tile__media">
+                          <img class="tile__img2" src="../public/images/statyours.jpg" alt=""  />
+                        </div>
+                        <div class="tile__details2">
+                          <p class="tech-description" align="right" style="vertical-align: top;"><b>Technology Used:</b></p>
+                          <p class="languages" align="right" style="vertical-align: top;"> Audacity &nbsp; <br> Python&nbsp;&nbsp;&nbsp;</p>
+                          <a href="https://dailybruin.com/2016/12/01/statistically-yours-cold-emailing-in-a-quest-for-internships/" target="_blank">
+                          <img class="icon_img3mobile" src="../public/images/internet.svg" alt="" align="right"/>
+                          </a>
+                        <div class="tile__title2">
+                            <h1 class="project-name2">Statistically Yours</h1>
+                            <p class="project-description">Podcast demystifying trending topics relevant to <br>
+                              the UCLA student body using statistics and <br>
+                              infographics.</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+
+
+
+
+        <div class="social-media2">
+            <div class="web-content2">
+                  <h1 class="my-text2">
+                    Let's Connect!
+                  </h1>
+                  <div class="icon-list2">
+                        <div class="another-container2">
+                            <a id= "linkedinicon" href="https://www.linkedin.com/in/austin-ma/" target="_blank">
+                            <img class="social-media-icon" id="linkedinicon" src="../public/images/linkedin.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="another-container2">
+                            <a id="githubicon" href="https://github.com/Austin-Ma" target="_blank">
+                            <img class="social-media-icon" id="githubicon"  src="../public/images/github.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="another-container2">
+                            <a id="mediumicon" href="https://medium.com/@_AustinMa" target="_blank">
+                            <img class="social-media-icon" id="mediumicon" src="../public/images/medium.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="another-container2">
+                            <a id="twittericon" href="https://twitter.com/_AustinMa" target="_blank">
+                            <img class="social-media-icon" id="twittericon" src="../public/images/twitter.png" alt=""/>
+                            </a>
+                        </div>
+                  </div>
+                  <div class="personal-content2"> "It's easier to invent the future than predict it." </div>
+             </div>
+        </div>
+
+  </div>
+</div>
+
+
+
+<div class=nav_container>
+  <div class=nav_menu>
+    <div class=menu_text>
+      <p class="menu_selection"> About Me</p>
+      &nbsp;
+      <p class="menu_selection"> Portfolio</p>
+      &nbsp;
+      <p class="menu_selection"> Let's Connect!</p>
     </div>
+      <img class="nav-picture"
+      src="https://pbs.twimg.com/profile_images/661223657528651776/94PccMFW_400x400.jpg">
   </div>
-
-      <div class="nav-bar"> </div>
-
-
 </div>
 
-<div class="social-media">
-  <div class="content">
-    <div class="web-content">
-          <h1 class="my-text">
-            Let's Connect!
-          </h1>
-          <div class="icon-list">
-                <div class="another-container">
-                    <a id= "linkedinicon" href="https://www.linkedin.com/in/austin-ma/" target="_blank">
-                    <img class="social-media-icon" id="linkedinicon" src="../public/images/linkedin.png" alt=""/>
-                    </a>
-                </div>
-                <div class="another-container">
-                    <a id="githubicon" href="https://github.com/Austin-Ma" target="_blank">
-                    <img class="social-media-icon" id="githubicon"  src="../public/images/github.png" alt=""/>
-                    </a>
-                </div>
-                <div class="another-container">
-                    <a id="mediumicon" href="https://medium.com/@_AustinMa" target="_blank">
-                    <img class="social-media-icon" id="mediumicon" src="../public/images/medium.png" alt=""/>
-                    </a>
-                </div>
-                <div class="another-container">
-                    <a id="twittericon" href="https://twitter.com/_AustinMa" target="_blank">
-                    <img class="social-media-icon" id="twittericon" src="../public/images/twitter.png" alt=""/>
-                    </a>
-                </div>
-          </div>
-          <div class="personal-content"> "It's easier to invent the future than predict it." </div>
-     </div>
-
-
-  </div>
-
-    <div class="nav-bar"></div>
 </div>
-
-
-
 
 </body>
 
