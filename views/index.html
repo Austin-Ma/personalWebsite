@@ -5,20 +5,26 @@
     <title>title</title>
     <link rel="stylesheet" href="../public/stylesheets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zenscroll/4.0.2/zenscroll.js"></script>
+
+    <script src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.js"></script>
 
     <script>
     function goToInfo(){
       var infoPage = document.getElementbyId("info-page");
-      zenscroll.to(infoPage);
-    }
+      zenscroll.to(infoPage);}
 	  </script>
+    <script>
+      $(document).ready(function(){
+        $(".nav-bar-img").stick_in_parent();
+      });
+    </script>
+
 
   </head>
 
 <body>
 <div class="firstPage">
-
   <div class="banner">
     <div class="shell">
       <div class="name">Austin Ma</div>
@@ -32,7 +38,6 @@
 
 
   <div class="nav-bar">
-    Page 1 NavBar
 
       <div class="arrow0">
         <a href="#info-page">
@@ -66,26 +71,42 @@
         </a>
         </div>
     </div>
-
-
 </div>
 
 
+<div class="temp_cointainer">
+  <div class="info-page" id="info-page">
 
-<div class="info-page" id="info-page">
-  <div class="profile-column">
-    <img class="profile-picture" src="https://pbs.twimg.com/profile_images/661223657528651776/94PccMFW_400x400.jpg">
+    <div class="profile-column">
+      <img class="profile-picture" src="https://pbs.twimg.com/profile_images/661223657528651776/94PccMFW_400x400.jpg">
+    </div>
+
+    <div class="about-me">
+
+          <div class="general-info">
+            <img class="icon_img4" src="../public/images/location.png" alt=""/>
+            Los Angeles, California
+            <br><br>
+            <img class="icon_img4" src="../public/images/education.png" alt=""/>
+            University of California, Los Angeles
+            <br><br>
+            <img class="icon_img4" src="../public/images/reading.png" alt=""/>
+            The Lean Startup - Eric Ries
+            <br><br>
+            <img class="icon_img4" src="../public/images/spotify.png" alt=""/>
+          </div>
+      <div class="mission-statement"> Hey there, nice to meet you! I'm <i><b class="normal-text">Austin</b></i>. I'm currently a student at <i><b class="normal-text"> UCLA </b></i> studying <i><b class="normal-text">Linguistics and Computer Science</b></i>. <br> <br>
+         Currently, I'm primarily interested in full-stack web development, while also exploring data visualizations and design. <br> <br> When I'm not at school,
+         I enjoy hiking, golfing, and reading up on finance and startup entrepreneurship. <br> <br> <b><i>Check out some of the projects I've worked on!</b></i>
+      </div>
+    </div>
+
+
   </div>
-
-  <div class="about-me">
-    <div class="general-info">A</div>
-    <div class="mission-statement">B</div>
-  </div>
-
-
- <div class="nav-bar"> Page 2 NavBar</div>
+   <div class="nav-bar">
+   <img class="nav-bar-img" src="../public/images/tempNavBar.png" alt=""/>
+ </div>
 </div>
-
 
 
 
@@ -95,7 +116,7 @@
 
 
   <div class="code">
-  &nbsp;&nbsp;   Code
+  &nbsp;&nbsp;   <b class="my-title"> Code </b>
     <div class="row__inner">
 
       <div class="tile">
@@ -194,7 +215,7 @@
 
 
   <div class="code">
-        &nbsp;&nbsp; Data Visualization
+        &nbsp;&nbsp; <b class="my-title">Data Visualization</b>
       <div class="row__inner">
 
 
@@ -223,9 +244,9 @@
 
 
   <div class="code">
-        &nbsp;&nbsp; Other Projects
+        &nbsp;&nbsp; <b class="my-title"> Other Projects </b>
       <div class="row__inner">
-            &nbsp;&nbsp; Other Projects
+
 
         <div class="tile">
           <div class="tile__media">
@@ -251,27 +272,52 @@
     </div>
   </div>
 
-      <div class="nav-bar"> Page 3 NavBar</div>
+      <div class="nav-bar"> </div>
 
 
 </div>
 
 <div class="social-media">
-
   <div class="content">
-    <div class="web-content"> Let's Connect! </div>
-    <div class="personal-content"> "It's easier to invent the future than predict it." </div>
+    <div class="web-content">
+          <h1 class="my-text">
+            Let's Connect!
+          </h1>
+          <div class="icon-list">
+                <div class="another-container">
+                    <a id= "linkedinicon" href="https://www.linkedin.com/in/austin-ma/" target="_blank">
+                    <img class="social-media-icon" id="linkedinicon" src="../public/images/linkedin.png" alt=""/>
+                    </a>
+                </div>
+                <div class="another-container">
+                    <a id="githubicon" href="https://github.com/Austin-Ma" target="_blank">
+                    <img class="social-media-icon" id="githubicon"  src="../public/images/github.png" alt=""/>
+                    </a>
+                </div>
+                <div class="another-container">
+                    <a id="mediumicon" href="https://medium.com/@_AustinMa" target="_blank">
+                    <img class="social-media-icon" id="mediumicon" src="../public/images/medium.png" alt=""/>
+                    </a>
+                </div>
+                <div class="another-container">
+                    <a id="twittericon" href="https://twitter.com/_AustinMa" target="_blank">
+                    <img class="social-media-icon" id="twittericon" src="../public/images/twitter.png" alt=""/>
+                    </a>
+                </div>
+          </div>
+          <div class="personal-content"> "It's easier to invent the future than predict it." </div>
+     </div>
+
+
   </div>
 
-    <div class="nav-bar"> Page 4 NavBar </div>
+    <div class="nav-bar"></div>
 </div>
 
 
 
-</body>
-</html>
 
-<body>
+</body>
 
 
 
